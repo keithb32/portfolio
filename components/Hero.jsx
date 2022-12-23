@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
           I'm a third-year <span className="text-white">computer science</span>{" "}
           student at the <span className="text-white">University of Virginia</span> who is
           passionate in frontend development and data science. In my free time I
-          enjoy reading, journaling, lifting, and playing basketball. I am
+          enjoy reading, journaling, lifting, listening to music, and playing basketball. I am
           currently seeking a summer internship for 2023.
         </p>
       </div>

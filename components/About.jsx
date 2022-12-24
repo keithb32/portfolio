@@ -22,8 +22,7 @@ const About = () => {
             My passion for programming began my junior year of high
             school when I took my first course in Python, Computational Physics.
             That class taught me the power of computers as I used Python to
-            solve physics problems involving large datasets, produce data
-            visualizations, and perform simulations. At that time I also gained
+            solve perform computations and produce visualizations for physics problems involving large datasets. At that time I also gained
             interest in competitive programming, enrolling in competitions such
             as ODU's Great Computer Challenge (link here).
           </p>

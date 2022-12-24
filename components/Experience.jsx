@@ -41,7 +41,7 @@ const Experience = () => {
           disableClickOnCircle
           activeItemIndex={-1}
         >
-          {/* Body text for Chrono cards. Should refactor this into a component */}
+          {/* Body text for timeline cards. Should refactor this into a component */}
           <div>
             <ul>
               <li>

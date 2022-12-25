@@ -3,7 +3,7 @@ import React from "react";
 // https://www.youtube.com/watch?v=vqKie-xmcFs&t=2s
 const Card = ({ image, title, description, tags }) => {
   return (
-    <div className="bg-white rounded-md overflow-hidden shadow-md mx-2 h-100">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md mx-2 mb-4">
       {/* Card banner image */}
       <img
         src="https://unsplash.it/250/250"

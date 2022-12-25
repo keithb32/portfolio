@@ -7,20 +7,22 @@ import "slick-carousel/slick/slick-theme.css";
 
 // https://bobbyhadz.com/blog/react-get-window-width-height
 
-
 const Portfolio = () => {
-  const [windowSize, setWindowSize] = useState({innerWidth: undefined, innerHeight: undefined});
+  const [windowSize, setWindowSize] = useState({
+    innerWidth: undefined,
+    innerHeight: undefined,
+  });
 
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
     }
     function getWindowSize() {
-        const { innerWidth, innerHeight } = window;
-        return { innerWidth, innerHeight };
+      const { innerWidth, innerHeight } = window;
+      return { innerWidth, innerHeight };
     }
     window.addEventListener("resize", handleWindowResize);
-    window.addEventListener("load", handleWindowResize)
+    window.addEventListener("load", handleWindowResize);
     return () => {
       window.removeEventListener("resize", handleWindowResize);
       window.removeEventListener("load", handleWindowResize);
@@ -47,37 +49,37 @@ const Portfolio = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <Slider className="w-3/4" {...settings}>
-          <div>
+        <Slider className="w-1/2 md:w-3/4" {...settings}>
+        
             <Card
               title="Foodie"
               description="A one-stop shop for an individual's food needs. Built on React Native, the app features a recipe organizer, a searchable library of recipes, and a local restaurant finder to assist users with their food-related needs."
             />
-          </div>
-          <div>
+          
+        
             <Card
               title="Bucket List (React Native)"
               description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for cross-platform."
             />
-          </div>
-          <div>
+          
+        
             <Card
               title="Bucket List (Android)"
               description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for Android."
             />
-          </div>
-          <div>
+          
+        
             <Card
               title="HoosHealthTracker"
               description="A fitness tracker web application allowing users to track mood, calories, exercise, and sleep. Features a searchable library of over 500,000 foods and their nutrition info."
             />
-          </div>
-          <div>
+          
+        
             <Card
               title="HoosNotes"
               description="A class organizer web application allowing users to create todo items, mark calendar events, upload lecture notes, and interact with other users in their classes via live chat."
             />
-          </div>
+          
         </Slider>
       </div>
     </div>

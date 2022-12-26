@@ -1,6 +1,7 @@
 import React from "react";
 import DividerWithText from "./DividerWithText";
 import { Chrono } from "react-chrono";
+import BulletedList from "./BulletedList";
 
 const Experience = () => {
   const items = [
@@ -27,6 +28,8 @@ const Experience = () => {
       id="experience"
     >
       <DividerWithText text="Experience" />
+
+      {/* Timeline */}
       <div className="flex m-auto items-center justify-center w-100 h-100">
         <Chrono
           items={items}
@@ -41,46 +44,32 @@ const Experience = () => {
           disableClickOnCircle
           activeItemIndex={-1}
         >
-          {/* Body text for timeline cards. Should refactor this into a component */}
-          <div>
-            <ul>
-              <li>
-                • Facilitated preparations for test and evaluation of flight
-                demonstration of multiple autonomous unmanned aircraft.
-              </li>
-              <li>
-                • Supported installation of computer networks used for data
-                acquisition.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                • Made improvements to a Python sizing optimization script for
-                the CobraMRV Mars Lander Vehicle including: the addition of a
-                user-friendly GUI, the ability to accept any CobraMRV variant as
-                input, and the ability to generate sensitivity graphs comparing
-                structural mass and load case parameters.
-              </li>
-              <li>
-                • Automated the functionality of structural engineering software
-                including NASTRAN and HyperSizer.
-              </li>
-              <li>
-                • Developed APA research paper under guidance of NASA mentor and
-                presented findings to a symposium and branch meeting.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                • Shelved books, organized book carts, performed inventory
-                checks, and assisted patrons with finding items.
-              </li>
-            </ul>
-          </div>
+          {/* Body text for timeline cards */}
+          <BulletedList
+            listItems={[
+              `• Facilitated preparations for test and evaluation of flight demonstration of multiple autonomous unmanned aircraft.`,
+              `• Supported installation of computer networks used for data acquisition.`,
+            ]}
+          />
+          <BulletedList
+            listItems={[
+              `• Made improvements to a Python sizing optimization script for
+              the CobraMRV Mars Lander Vehicle including: the addition of a
+              user-friendly GUI, the ability to accept any CobraMRV variant as
+              input, and the ability to generate sensitivity graphs comparing
+              structural mass and load case parameters.`,
+              `• Automated the functionality of structural engineering software
+              including NASTRAN and HyperSizer.`,
+              `• Developed APA research paper under guidance of NASA mentor and
+              presented findings to a symposium and branch meeting.`,
+            ]}
+          />
+          <BulletedList
+            listItems={[
+              `• Shelved books, organized book carts, performed inventory
+            checks, and assisted patrons with finding items.`,
+            ]}
+          />
         </Chrono>
       </div>
     </div>

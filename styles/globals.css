@@ -12,10 +12,13 @@ html {
 }
 
 
+.text-theme{
+  font-family: "Raleway", sans-serif;
+}
+
 /*
 https://dev.to/codyhouse/css-nugget-text-divider-in-flexbox-3310
 */
-
 .text-divider {
   display: flex;
   align-items: center;
@@ -38,15 +41,18 @@ https://dev.to/codyhouse/css-nugget-text-divider-in-flexbox-3310
   margin-left: var(--text-divider-gap);
 }
 
+/*
+Use of !important is necessary to override the styles of slick-track and slick-slide provided by the react-slick library
+*/
 .slick-track {
-  height: 100%;
   display: flex !important;
 }
+
 .slick-slide {
   height: auto !important;
   display: flex !important;
 }
+
 .slick-slide > div {
-  height: inherit !important;
-  display: flex !important;
+  display: flex;
 }

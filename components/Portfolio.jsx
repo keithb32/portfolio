@@ -45,41 +45,41 @@ const Portfolio = () => {
     >
       <DividerWithText text="Portfolio" />
       <div className="text-center">
-        <h2 className="text-xl mb-6">Check out some of my projects!</h2>
+        <h2 className="text-xl mb-6 text-theme">Check out some of my projects!</h2>
       </div>
 
       <div className="flex justify-center items-center">
         <Slider className="w-1/2 md:w-3/4" {...settings}>
-        
-            <Card
-              title="Foodie"
-              description="A one-stop shop for an individual's food needs. Built on React Native, the app features a recipe organizer, a searchable library of recipes, and a local restaurant finder to assist users with their food-related needs."
-            />
-          
-        
-            <Card
-              title="Bucket List (React Native)"
-              description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for cross-platform."
-            />
-          
-        
-            <Card
-              title="Bucket List (Android)"
-              description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for Android."
-            />
-          
-        
-            <Card
-              title="HoosHealthTracker"
-              description="A fitness tracker web application allowing users to track mood, calories, exercise, and sleep. Features a searchable library of over 500,000 foods and their nutrition info."
-            />
-          
-        
-            <Card
-              title="HoosNotes"
-              description="A class organizer web application allowing users to create todo items, mark calendar events, upload lecture notes, and interact with other users in their classes via live chat."
-            />
-          
+          <Card
+            title="Foodie"
+            description="A one-stop shop for an individual's food needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder to assist users with their food-related needs."
+            badge="Mobile"
+            tags={["React Native", "JavaScript", "Firebase", "Material UI", "Edamam API", "TomTom API"]}
+          />
+          <Card
+            title="Bucket List (React Native)"
+            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for cross-platform."
+            badge="Mobile"
+            tags={["React Native", "JavaScript"]}
+          />
+          <Card
+            title="Bucket List (Android)"
+            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for Android."
+            badge="Mobile"
+            tags={["Android", "Kotlin", "MySQL"]}
+          />
+          <Card
+            title="HoosHealthTracker"
+            description="A fitness tracker web application allowing users to track mood, calories, exercise, and sleep. Features a searchable library of over 500,000 foods and their nutrition info."
+            badge="Web"
+            tags={["Flask", "Python", "MySQL", "Bootstrap", "FoodDataCentral API", "Heroku"]}
+          />
+          <Card
+            title="HoosNotes"
+            description="A class organizer web application allowing users to create todo items, mark calendar events, upload lecture notes, and interact with other users in their classes via live chat."
+            badge="Web"
+            tags={["Django", "Python", "PostgreSQL", "Bootstrap", "Google OAuth2.0", "Twilio", "Heroku"]}
+          />
         </Slider>
       </div>
     </div>

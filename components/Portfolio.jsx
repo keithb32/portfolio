@@ -57,14 +57,14 @@ const Portfolio = () => {
             tags={["React Native", "JavaScript", "Firebase", "Material UI", "Edamam API", "TomTom API"]}
           />
           <Card
-            title="Bucket List (React Native)"
-            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for cross-platform."
+            title="Bucket List (Cross-platform)"
+            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for iOS and Android devices."
             badge="Mobile"
             tags={["React Native", "JavaScript"]}
           />
           <Card
             title="Bucket List (Android)"
-            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for Android."
+            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for Android devices."
             badge="Mobile"
             tags={["Android", "Kotlin", "MySQL"]}
           />
@@ -78,7 +78,7 @@ const Portfolio = () => {
             title="HoosNotes"
             description="A class organizer web application allowing users to create todo items, mark calendar events, upload lecture notes, and interact with other users in their classes via live chat."
             badge="Web"
-            tags={["Django", "Python", "PostgreSQL", "Bootstrap", "Google OAuth2.0", "Twilio", "Heroku"]}
+            tags={["Django", "Python", "PostgreSQL", "Bootstrap", "OAuth2.0", "Twilio", "Heroku", "GitHub Actions"]}
           />
         </Slider>
       </div>

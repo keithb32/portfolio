@@ -27,7 +27,7 @@ const Navbar = () => {
     };
 
     const changeNavOpacity = () => {
-      const newScrollY = Math.ceil(window.scrollY / 20) * 20;
+      const newScrollY = Math.ceil(window.scrollY / 40) * 40;
       if (scrollY != newScrollY) {
         setScrollY(newScrollY);
       }
@@ -37,7 +37,7 @@ const Navbar = () => {
     window.addEventListener("scroll", changeNavOpacity);
   }, [scrollY]);
 
-  const opacity = Math.min(50 / scrollY, 1);
+  const opacity = Math.min(30 / scrollY, 1);
 
   return (
     <nav

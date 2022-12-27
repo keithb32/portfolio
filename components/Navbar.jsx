@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+// https://stackoverflow.com/questions/46719757/how-can-i-fade-a-navbar-with-a-scroll-down-with-react
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
+  const [hidden, setHidden] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   const handleNav = () => {
     setNav(!nav);
@@ -13,32 +17,50 @@ const Navbar = () => {
 
   useEffect(() => {
     const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("#ffffff");
-        setTextColor("#000000");
+      if (window.scrollY >= 120) {
+        setHidden(true);
       } else {
+        setHidden(false);
         setColor("transparent");
         setTextColor("#ffffff");
       }
     };
+
+    const changeNavOpacity = () => {
+      const newScrollY = Math.ceil(window.scrollY / 20) * 20;
+      if (scrollY != newScrollY) {
+        setScrollY(newScrollY);
+      }
+    };
+
     window.addEventListener("scroll", changeColor);
-  }, []);
+    window.addEventListener("scroll", changeNavOpacity);
+  }, [scrollY]);
+
+  const opacity = Math.min(50 / scrollY, 1);
 
   return (
-    <div
+    <nav
       style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      className={`fixed left-0 top-0 w-full z-10 ease-in duration-300 opacity-[${opacity}]`}
+      hidden={hidden ? true : false}
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-3 text-white">
         {/* Logo */}
         <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            KB
+          <h1
+            style={{ color: `${textColor}`, opacity: `${opacity}` }}
+            className="font-bold text-4xl"
+          >
+            Keith Butler
           </h1>
         </Link>
 
         {/* Section Links */}
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
+        <ul
+          style={{ color: `${textColor}`, opacity: `${opacity}` }}
+          className="hidden sm:flex"
+        >
           <li className="p-4 hover:text-gray-500 text-lg">
             <Link href="/#about">About</Link>
           </li>
@@ -61,6 +83,7 @@ const Navbar = () => {
             <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
           )}
         </div>
+
         {/* Mobile Menu */}
         <div
           className={
@@ -97,7 +120,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

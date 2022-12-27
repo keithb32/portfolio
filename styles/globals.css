@@ -56,3 +56,8 @@ Use of !important is necessary to override the styles of slick-track and slick-s
 .slick-slide > div {
   display: flex;
 }
+
+nav{
+  transition-timing-function: "ease-in";
+  transition: 0.5s;
+}

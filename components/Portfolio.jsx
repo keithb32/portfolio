@@ -54,7 +54,7 @@ const Portfolio = () => {
         <Slider className="w-1/2 md:w-3/4" {...settings}>
           <Card
             title="Foodie"
-            description="A one-stop shop for an individual's food needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder to assist users with their food-related needs."
+            description="A mobile app for an individual's culinary needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder to assist users with their food-related needs."
             badge="Mobile"
             tags={[
               "React Native",
@@ -82,7 +82,7 @@ const Portfolio = () => {
           />
           <Card
             title="HoosHealthTracker"
-            description="A fitness tracker web application allowing users to track mood, calories, exercise, and sleep. Features a searchable library of over 500,000 foods and their nutrition info."
+            description="A fitness tracker web application allowing users to track mood, calories, exercise, and sleep. Features a searchable library of over 500,000 foods with nutritional information."
             badge="Web"
             tags={[
               "Flask",
@@ -95,13 +95,13 @@ const Portfolio = () => {
           />
           <Card
             title="Bucket List (Cross-platform)"
-            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for iOS and Android devices."
+            description="A mobile app that allows users to set goals with deadlines and mark them for completion. Built for iOS and Android devices."
             badge="Mobile"
             tags={["React Native", "JavaScript"]}
           />
           <Card
             title="Bucket List (Android)"
-            description="An app that allows users to set goals with deadlines and then mark them when they are complete. Built for Android devices."
+            description="A mobile app that allows users to set goals with deadlines and mark them for completion. Built for Android devices."
             badge="Mobile"
             tags={["Android", "Kotlin", "MySQL"]}
           />

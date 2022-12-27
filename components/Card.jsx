@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import LinkWithIcon from "./LinkWithIcon";
 
 // https://www.youtube.com/watch?v=vqKie-xmcFs&t=2s
 // https://www.youtube.com/watch?v=cY0XJY98d3w
-const Card = ({ image, title, description, tags }) => {
+const Card = ({ image, url, title, description, tags }) => {
   return (
     <div className="flex flex-col justify-start align-stretch bg-white rounded-lg overflow-hidden shadow-md mx-2 mb-4 relative">
       {/* Card banner image */}
@@ -17,8 +18,8 @@ const Card = ({ image, title, description, tags }) => {
 
       {/* Card text */}
       <div className="mx-4 mt-4 mb-2">
-        <h2 className="font-bold text-md">{title}</h2>
-        <p className="text-md">{description}</p>
+        <LinkWithIcon text={title} url={url && url} />
+        <p className="text-md mt-1">{description}</p>
       </div>
 
       {/* Card tags */}

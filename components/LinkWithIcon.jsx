@@ -10,7 +10,7 @@ const LinkWithIcon = ({text, url}) => {
       rel="noopener noreferrer"
     >
       {text}
-      <FiExternalLink className="inline-block text-md ml-1 align-middle" />
+      <FiExternalLink className="inline-block text-md ml-1 align-middle mb-1" />
     </a>
   );
 };

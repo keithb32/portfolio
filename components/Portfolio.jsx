@@ -30,10 +30,10 @@ const Portfolio = () => {
   }, []);
 
   const getNumSlidesToShow = () => {
-    if (windowSize.innerWidth <= 450) {
+    if (windowSize.innerWidth < 640) {
       return 1;
     }
-    if (windowSize.innerWidth > 450 && windowSize.innerWidth < 920) {
+    if (windowSize.innerWidth >= 640 && windowSize.innerWidth < 920) {
       return 2;
     } else {
       return 3;
@@ -62,7 +62,7 @@ const Portfolio = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <Slider className="w-[80%]" {...settings}>
+        <Slider className="w-1/2 min-[640px]:w-[90%] min-[920px]:w-[85%]" {...settings}>
           <Card
             title="Foodie"
             description="A mobile app for an individual's culinary needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder to assist users with their food-related needs."

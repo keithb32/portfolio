@@ -6,7 +6,7 @@ import LinkWithIcon from "./LinkWithIcon";
 // https://www.youtube.com/watch?v=cY0XJY98d3w
 const Card = ({ image, url, title, description, tags }) => {
   return (
-    <div className="flex flex-col justify-start align-stretch bg-white rounded-lg overflow-hidden shadow-md mx-2 mb-4 relative">
+    <div className="flex w-[90%] flex-col justify-start align-stretch bg-white rounded-lg overflow-hidden shadow-md mx-2 mb-4 relative">
       {/* Card banner image */}
       <Image
         src="https://unsplash.it/250/250"
@@ -23,7 +23,7 @@ const Card = ({ image, url, title, description, tags }) => {
       </div>
 
       {/* Card tags */}
-      <div className="absolute top-0 ml-2 mt-2 hidden md:visible">
+      <div className="absolute top-0 ml-2 mt-2 hidden md:block">
         {tags &&
           tags.map((tag, index) => (
             <div class="bg-[#212427] text-white p-1 ml-1 text-xs font-bold rounded-full shadow-lg inline-block" key={index}>

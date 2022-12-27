@@ -6,20 +6,20 @@ import ChronoDetail from "./ChronoDetail";
 const Experience = () => {
   const items = [
     {
-      title: "Aug 2022 - Present",
       workplace: "U.S. Army Technology Development Directorate",
       jobTitle: "Computer Science Intern",
       image: "https://unsplash.it/75/75",
+      time: "Aug 2022 - Present",
       listItems: [
         `• Facilitated preparations for test and evaluation of flight demonstration of multiple autonomous unmanned aircraft.`,
         `• Supported installation of computer networks used for data acquisition.`,
       ],
     },
     {
-      title: "Aug 2019 - May 2020",
       workplace: "NASA Langley Research Center",
       jobTitle: "Structural  & Thermal Systems Branch Intern",
       image: "https://unsplash.it/75/75",
+      time: "Aug 2019 - May 2020",
       listItems: [
         `• Made improvements to a Python sizing optimization script for
         the CobraMRV Mars Lander Vehicle including: the addition of a
@@ -33,10 +33,10 @@ const Experience = () => {
       ],
     },
     {
-      title: "Jun 2018 - Apr 2020",
       workplace: "Tabb Library",
       jobTitle: "Library Clerk Aide",
       image: "https://unsplash.it/75/75",
+      time: "Jun 2018 - Apr 2020",
       listItems: [
         `• Shelved books, organized book carts, performed inventory
       checks, and assisted patrons with finding items.`,
@@ -45,10 +45,7 @@ const Experience = () => {
   ];
 
   return (
-    <div
-      className="max-w-[1240px] m-auto items-center p-3 mb-10"
-      id="experience"
-    >
+    <div className="max-w-[1240px] m-auto items-center p-3" id="experience">
       <DividerWithText text="Experience" />
 
       {/* Timeline */}
@@ -59,8 +56,9 @@ const Experience = () => {
           scrollable={{ scrollbar: false }}
           cardHeight="150"
           theme={{
-            primary: "black",
-            titleColor: "black",
+            primary: "#212427",
+            titleColor: "#212427",
+            cardBgColor: "#FAF9F6",
           }}
           hideControls
           disableClickOnCircle
@@ -73,6 +71,7 @@ const Experience = () => {
                 image={item.image}
                 workplace={item.workplace}
                 jobTitle={item.jobTitle}
+                time={item.time}
                 listItems={item.listItems}
               />
             ))}

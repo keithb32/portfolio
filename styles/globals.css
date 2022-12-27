@@ -5,6 +5,8 @@
 html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
+  color: #212427;
+  background-color: #FAF9F6;
 }
 
 .hero-img {
@@ -55,9 +57,4 @@ Use of !important is necessary to override the styles of slick-track and slick-s
 
 .slick-slide > div {
   display: flex;
-}
-
-nav{
-  transition-timing-function: "ease-in";
-  transition: 0.5s;
 }

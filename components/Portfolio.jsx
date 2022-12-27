@@ -95,13 +95,13 @@ const Portfolio = () => {
           />
           <Card
             title="Bucket List (Cross-platform)"
-            description="A mobile app that allows users to set goals with deadlines and mark them for completion. Built for iOS and Android devices."
+            description="A mobile app where users maintain a list of bucket items with deadline and completion dates. Built for iOS and Android devices."
             badge="Mobile"
             tags={["React Native", "JavaScript"]}
           />
           <Card
             title="Bucket List (Android)"
-            description="A mobile app that allows users to set goals with deadlines and mark them for completion. Built for Android devices."
+            description="A mobile app where users maintain a list of bucket items with deadline and completion dates. Built for Android devices."
             badge="Mobile"
             tags={["Android", "Kotlin", "MySQL"]}
           />

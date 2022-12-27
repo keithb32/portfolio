@@ -10,17 +10,17 @@ const Hero = () => {
       {/* Main Text */}
       <div className="p-5 z-[2] mt-[-10rem] mx-10 font-light sm:text-center sm:break-words sm:w-1/2">
         <p className="py-5 text-lg text-gray-400 sm:text-xl">Hi, my name is</p>
-        <h2 className="text-4xl text-white font-bold sm:text-5xl ">
+        <h2 className="text-4xl text-[#FAF9F6] font-bold sm:text-5xl ">
           Keith Butler.
         </h2>
         <p className="py-5 text-lg text-gray-400 sm:text-xl">
-          I'm a third-year <span className="text-white">computer science</span>{" "}
+          I'm a third-year <span className="text-[#FAF9F6]">computer science</span>{" "}
           student at the{" "}
-          <span className="text-white">University of Virginia</span> who is
-          passionate in <span className="text-white">frontend development</span>{" "}
-          and <span className="text-white">data science</span>. In my free time
+          <span className="text-[#FAF9F6]">University of Virginia</span> who is
+          passionate in <span className="text-[#FAF9F6]">frontend development</span>{" "}
+          and <span className="text-[#FAF9F6]">data science</span>. In my free time
           I enjoy reading, journaling, lifting, listening to music, and playing
-          basketball. I am currently seeking a <span className="text-white">summer internship for 2023</span>.
+          basketball. I am currently seeking a <span className="text-[#FAF9F6]">summer internship for 2023</span>.
         </p>
       </div>
     </header>

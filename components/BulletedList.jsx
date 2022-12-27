@@ -3,7 +3,7 @@ import React from "react";
 
 const BulletedList = ({ listItems }) => {
   return (
-    <div>
+    <div className="mt-2">
       <ul>
         {listItems &&
           listItems.map((item, index) => <li key={index}>{item}</li>)}

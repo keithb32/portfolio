@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
 
       {/* Main Text */}
-      <div className="p-5 z-[2] mt-[2rem] mx-10 font-light sm:text-center sm:break-words sm:w-1/2 sm:mt-[-10rem]">
+      <div className="flex flex-col p-5 z-[2] mt-[2rem] mx-10 font-light sm:text-center sm:break-words sm:w-1/2 sm:mt-[-10rem]">
         <p className="py-5 text-lg text-gray-400 sm:text-xl">Hi, my name is</p>
         <h2 className="text-4xl text-[#FAF9F6] font-bold sm:text-5xl ">
           Keith Butler.
@@ -17,12 +17,13 @@ const Hero = () => {
           I'm a third-year <span className="text-[#FAF9F6]">computer science</span>{" "}
           student at the{" "}
           <span className="text-[#FAF9F6]">University of Virginia</span> who is
-          passionate in <span className="text-[#FAF9F6]">frontend development</span>{" "}
+          interested in <span className="text-[#FAF9F6]">frontend development</span>{" "}
           and <span className="text-[#FAF9F6]">data science</span>. In my free time
-          I enjoy reading, journaling, lifting, listening to music, and playing
+          I enjoy reading, listening to music, lifting, and playing
           basketball. I am currently seeking a <span className="text-[#FAF9F6]">summer internship for 2023</span>.
         </p>
       </div>
+
     </header>
   );
 };

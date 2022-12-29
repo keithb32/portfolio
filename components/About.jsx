@@ -3,15 +3,35 @@ import React from "react";
 import DividerWithText from "./DividerWithText";
 import { FiExternalLink } from "react-icons/fi";
 import LinkWithIcon from "./LinkWithIcon";
+import Image from "next/image";
 
 const About = () => {
   return (
     <div className="max-w-[1240px] m-auto items-center p-3 mb-10" id="about">
       <DividerWithText text="About Me" />
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-3">
-        <div className="flex justify-center items-center mb-5 sm:mb-0">
-          <img src="https://unsplash.it/250/250" />
+        {/* Left column - portrait + resume & transcript links */}
+        <div className="flex flex-col justify-center items-center mx-4 mt-4 sm:mb-0">
+          <Image
+            src="https://unsplash.it/250/250"
+            width={250}
+            height={250}
+            alt=""
+            className="mb-4"
+          />
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <button className="text-[#212427] border-2 border-[#212427] px-4 py-2 mb-2 rounded-md hover:bg-gray-300 min-[250px]:w-[200px]">
+              <LinkWithIcon text="Resume" url="#" forButton />
+            </button>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <button className="text-[#212427] border-2 border-[#212427] px-4 py-2 mb-4 rounded-md hover:bg-gray-300 min-[250px]:w-[200px]">
+              <LinkWithIcon text="Transcript" url="#" forButton />
+            </button>
+          </a>
         </div>
+
+        {/* Right column - paragraph intro */}
         <div className="sm:col-span-2">
           <p>
             I'm a third-year student studying computer science at the University

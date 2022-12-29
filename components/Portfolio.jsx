@@ -57,15 +57,15 @@ const Portfolio = () => {
       <DividerWithText text="Portfolio" />
       <div className="text-center">
         <h2 className="text-xl mb-6 text-theme">
-          Check out some of my projects!
+          Here are some of my most recent projects!
         </h2>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-4">
         <Slider className="w-1/2 min-[640px]:w-[90%] min-[920px]:w-[85%]" {...settings}>
           <Card
             title="Foodie"
-            description="A mobile app for an individual's culinary needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder to assist users with their food-related needs."
+            description="A mobile app for an individual's culinary needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder."
             badge="Mobile"
             tags={[
               "React Native",
@@ -106,13 +106,13 @@ const Portfolio = () => {
           />
           <Card
             title="Bucket List (Cross-platform)"
-            description="A mobile app where users maintain a list of bucket items with deadline and completion dates. Built for iOS and Android devices."
+            description="A mobile app allowing users to maintain a list of bucket items with deadline and completion dates. Built for iOS and Android devices."
             badge="Mobile"
             tags={["React Native", "JavaScript"]}
           />
           <Card
             title="Bucket List (Android)"
-            description="A mobile app where users maintain a list of bucket items with deadline and completion dates. Built for Android devices."
+            description="A mobile app allowing users to maintain a list of bucket items with deadline and completion dates. Built for Android devices."
             badge="Mobile"
             tags={["Android", "Kotlin", "MySQL"]}
           />

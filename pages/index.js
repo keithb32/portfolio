@@ -1,10 +1,10 @@
 import Head from "next/head";
 import About from "../components/About";
-import DividerWithText from "../components/DividerWithText";
 import Experience from "../components/Experience";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
       <About />
       <Experience />
       <Portfolio />
+      <Contact />
     </>
   );
 }

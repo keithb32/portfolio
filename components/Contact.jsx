@@ -8,19 +8,26 @@ const Contact = () => {
         <div className="flex flex-col h-full max-w-[1240px] m-auto justify-center items-center" id="contact">
 
             {/* Social Icons */}
-            <div className="grid grid-cols-1 gap-2 w-1/4 mb-6 sm:grid-cols-3 sm:gap-0">
-                <div className="inline-block mx-auto w-1/3">
-                    <AiOutlineMail size={40} />
+            <div className="grid grid-cols-1 gap-2 w-1/4 mb-4 sm:grid-cols-3 sm:gap-0">
+                <div className="inline-block mx-auto ">
+                    <a href="mailto:kab7em@virginia.edu">
+                        <AiOutlineMail size={40} />
+                    </a>
                 </div>
-                <div className="inline-block mx-auto  w-1/3">
-                    <AiFillGithub size={40}/>
+                <div className="inline-block mx-auto ">
+                    <a href="https://github.com/keithb32" target="_blank" rel="noopener noreferrer">
+                        <AiFillGithub size={40}/>
+                    </a>
                 </div>
-                <div className="inline-block mx-auto w-1/3">
-                    <AiFillLinkedin size={40} />
+                <div className="inline-block mx-auto ">
+                    <a href="https://www.linkedin.com/in/keith-butler-72366522a/" target="_blank" rel="noopener noreferrer">
+                        <AiFillLinkedin size={40} />
+                    </a>
                 </div>
             </div>
 
-            <p className="text-lg">Keith Butler</p>
+            <p className="text-lg">© Keith Butler 2022</p>
+            <p className="text-sm">Built with NextJS and TailwindCSS</p>
         </div>
     </div>
   );

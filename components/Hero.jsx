@@ -14,16 +14,17 @@ const Hero = () => {
           Keith Butler.
         </h2>
         <p className="py-5 text-lg text-gray-400 sm:text-xl">
-          I'm a third-year <span className="text-[#FAF9F6]">computer science</span>{" "}
-          student at the{" "}
-          <span className="text-[#FAF9F6]">University of Virginia</span> who is
-          interested in <span className="text-[#FAF9F6]">frontend development</span>{" "}
-          and <span className="text-[#FAF9F6]">data science</span>. In my free time
-          I enjoy reading, listening to music, lifting, and playing
-          basketball. I am currently seeking a <span className="text-[#FAF9F6]">summer internship for 2023</span>.
+          I'm a third-year{" "}
+          <span className="text-[#FAF9F6]">computer science</span> student at
+          the <span className="text-[#FAF9F6]">University of Virginia</span> who
+          is interested in{" "}
+          <span className="text-[#FAF9F6]">frontend development</span> and{" "}
+          <span className="text-[#FAF9F6]">data science</span>. I love creating
+          web apps, mobile apps, data visualizations, and machine learning
+          models. I am currently seeking a{" "}
+          <span className="text-[#FAF9F6]">summer internship for 2023</span>.
         </p>
       </div>
-
     </header>
   );
 };

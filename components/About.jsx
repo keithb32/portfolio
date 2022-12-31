@@ -19,6 +19,7 @@ const About = () => {
             alt=""
             className="mb-4"
           />
+          {/*
           <a href="#" target="_blank" rel="noopener noreferrer">
             <button className="text-[#212427] border-2 border-[#212427] px-4 py-2 mb-2 rounded-md hover:bg-gray-300 min-[250px]:w-[200px]">
               <LinkWithIcon text="Resume" url="#" forButton />
@@ -29,6 +30,7 @@ const About = () => {
               <LinkWithIcon text="Transcript" url="#" forButton />
             </button>
           </a>
+          */}
         </div>
 
         {/* Right column - paragraph intro */}
@@ -43,7 +45,7 @@ const About = () => {
           <p>
             My passion for programming began my junior year of high school when
             I took my first course in Python, Computational Physics. That class
-            taught me the power of computers as I used Python to solve perform
+            taught me the power of computers as I used Python to perform
             computations and produce visualizations for physics problems
             involving large datasets. At that time I also gained interest in
             competitive programming, enrolling in competitions such as{" "}
@@ -75,6 +77,11 @@ const About = () => {
           <p>
             For a full list of the technologies I've worked with, you can check
             out my <LinkWithIcon text="resume" url="#" />.
+          </p>
+          <br />
+          <p>
+            In my free time I enjoy reading, listening to music, lifting, and
+            playing basketball.
           </p>
         </div>
       </div>

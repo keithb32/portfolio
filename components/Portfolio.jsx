@@ -64,6 +64,7 @@ const Portfolio = () => {
       <div className="flex justify-center items-center mb-4">
         <Slider className="w-1/2 min-[640px]:w-[90%] min-[920px]:w-[85%]" {...settings}>
           <Card
+            url="https://github.com/keithb32/foodie"
             title="Foodie"
             description="A mobile app for an individual's culinary needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder."
             badge="Mobile"
@@ -77,6 +78,7 @@ const Portfolio = () => {
             ]}
           />
           <Card
+            url="https://github.com/keithb32/hoos-notes"
             title="HoosNotes"
             description="A class organizer web application allowing users to create todo items, mark calendar events, upload lecture notes, and interact with other users in their classes via live chat."
             badge="Web"
@@ -92,6 +94,7 @@ const Portfolio = () => {
             ]}
           />
           <Card
+            url="https://github.com/keithb32/hoos-health-tracker"
             title="HoosHealthTracker"
             description="A fitness tracker web application allowing users to track mood, calories, exercise, and sleep. Features a searchable library of over 500,000 foods with nutritional information."
             badge="Web"
@@ -105,12 +108,14 @@ const Portfolio = () => {
             ]}
           />
           <Card
+            url="https://github.com/keithb32/bucketlist-android-ios"
             title="Bucket List (Cross-platform)"
             description="A mobile app allowing users to maintain a list of bucket items with deadline and completion dates. Built for iOS and Android devices."
             badge="Mobile"
             tags={["React Native", "JavaScript"]}
           />
           <Card
+            url="https://github.com/keithb32/bucketlist-android"
             title="Bucket List (Android)"
             description="A mobile app allowing users to maintain a list of bucket items with deadline and completion dates. Built for Android devices."
             badge="Mobile"

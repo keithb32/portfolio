@@ -2,13 +2,25 @@ import React from "react";
 import DividerWithText from "./DividerWithText";
 import { Chrono } from "react-chrono";
 import ChronoDetail from "./ChronoDetail";
+import Image from "next/image";
+import ArmyLogo from "../public/army-logo.svg?url";
+import NasaLogo from "../public/nasa-logo.svg?url";
 
 const Experience = () => {
   const items = [
     {
       workplace: "U.S. Army Technology Development Directorate",
       jobTitle: "Computer Science Intern",
-      image: "https://unsplash.it/75/75",
+      image: (
+        <Image
+          src={ArmyLogo}
+          width={75}
+          height={75}
+          alt="Army Logo"
+          className="object-fit"
+          style={{ height: 75 }}
+        />
+      ),
       time: "Aug 2022 - Present",
       listItems: [
         `• Facilitated preparations for test and evaluation of flight demonstration of multiple autonomous unmanned aircraft.`,
@@ -18,7 +30,15 @@ const Experience = () => {
     {
       workplace: "NASA Langley Research Center",
       jobTitle: "Structural  & Thermal Systems Branch Intern",
-      image: "https://unsplash.it/75/75",
+      image: (
+        <Image
+          src={NasaLogo}
+          width={75}
+          height={75}
+          alt="Nasa Logo"
+          style={{ height: 75 }}
+        />
+      ),
       time: "Aug 2019 - May 2020",
       listItems: [
         `• Made improvements to a Python sizing optimization script for
@@ -35,7 +55,15 @@ const Experience = () => {
     {
       workplace: "Tabb Library",
       jobTitle: "Library Clerk Aide",
-      image: "https://unsplash.it/75/75",
+      image: (
+        <Image
+          src="/library-logo.jpg"
+          width={75}
+          height={75}
+          alt="Library Logo"
+          style={{ height: 75 }}
+        />
+      ),
       time: "Jun 2018 - Apr 2020",
       listItems: [
         `• Shelved books, organized book carts, performed inventory

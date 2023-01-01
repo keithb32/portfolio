@@ -26,7 +26,7 @@ const Card = ({ image, url, title, description, tags }) => {
       <div className="absolute top-0 ml-2 mt-2 hidden md:block">
         {tags &&
           tags.map((tag, index) => (
-            <div class="bg-[#212427] text-white p-1 ml-1 text-xs font-bold rounded-full shadow-lg inline-block" key={index}>
+            <div className="bg-[#212427] text-white p-1 ml-1 text-xs font-bold rounded-full shadow-lg inline-block" key={index}>
               <span>{tag}</span>
             </div>
           ))}

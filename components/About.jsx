@@ -61,8 +61,7 @@ const About = () => {
               Since attending the University of Virginia, I have taken several
               electives including Database Systems, Machine Learning, and Mobile
               Application Development which have encouraged me to specialize in
-              frontend development and data analytics. I love creating web apps,
-              mobile apps, data visualizations, and machine learning models.
+              frontend development and data analytics.
               Recently, I've been working with:
             </p>
             <ul className="list-disc list-inside my-2 mx-5">

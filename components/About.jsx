@@ -13,9 +13,9 @@ const About = () => {
         {/* Left column - portrait + resume & transcript links */}
         <div className="flex flex-col justify-center items-center mx-4 mt-4 sm:mb-0">
           <Image
-            src="https://unsplash.it/250/250"
+            src="/portrait.jpeg"
             width={250}
-            height={250}
+            height={200}
             alt=""
             className="mb-4"
           />
@@ -75,7 +75,7 @@ const About = () => {
           </div>
           <p>
             For a full list of the technologies I've worked with, you can check
-            out my <LinkWithIcon text="resume" url="#" />.
+            out my <LinkWithIcon text="resume" url="https://drive.google.com/file/d/1qQDCrvXNDdvM0Wb37McNgMY90DLzu5Nu/view?usp=sharing" />.
           </p>
           <br />
           <p>

@@ -58,3 +58,8 @@ Use of !important is necessary to override the styles of slick-track and slick-s
 .slick-slide > div {
   display: flex;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: grey !important;
+}

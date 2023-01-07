@@ -2,8 +2,21 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import LinkWithIcon from "./LinkWithIcon";
 
-// https://www.youtube.com/watch?v=vqKie-xmcFs&t=2s
-// https://www.youtube.com/watch?v=cY0XJY98d3w
+/***************************************************************************************
+*  REFERENCES
+*  
+*  Title: Tailwind CSS Tutorial #9 - Cards
+*  Author: The Net Ninja
+*  Date: 7/13/2020
+*  URL: https://www.youtube.com/watch?v=vqKie-xmcFs&t=2s
+*
+*  Title: Tailwind CSS Tutorial #10 - Badges
+*  Author: The Net Ninja
+*  Date: 7/15/2020
+*  URL: https://www.youtube.com/watch?v=cY0XJY98d3w
+*
+***************************************************************************************/
+
 const Card = ({ image, url, title, description, tags, objectFit }) => {
   const [tagsHidden, setTagsHidden] = useState(false);
 

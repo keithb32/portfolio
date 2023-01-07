@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
 
         {/* Footer Text */}
-        <p className="text-lg">© Keith Butler 2022</p>
+        <p className="text-lg">© Keith Butler 2023</p>
         <p className="text-sm">Built with NextJS and Tailwind CSS</p>
       </div>
     </div>

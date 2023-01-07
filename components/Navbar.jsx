@@ -2,7 +2,21 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-// https://stackoverflow.com/questions/46719757/how-can-i-fade-a-navbar-with-a-scroll-down-with-react
+
+/***************************************************************************************
+*  REFERENCES
+*  
+*  Title: How can I fade a navbar with a scroll down with React?
+*  Author: DZack
+*  Date: 10/13/2017
+*  URL: https://stackoverflow.com/questions/46719757/how-can-i-fade-a-navbar-with-a-scroll-down-with-react
+*
+*  Title: Build A Responsive Next JS Website Using Tailwind CSS - Beginner Guide
+*  Author: Code Commerce
+*  Date: 7/2/2022
+*  URL: https://www.youtube.com/watch?v=HVyct9EUNP8
+*
+***************************************************************************************/
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);

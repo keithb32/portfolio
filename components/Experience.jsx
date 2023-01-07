@@ -6,6 +6,17 @@ import Image from "next/image";
 import ArmyLogo from "../public/army-logo.svg?url";
 import NasaLogo from "../public/nasa-logo.svg?url";
 
+/***************************************************************************************
+*  REFERENCES
+*  
+*  Title: react-chrono
+*  Author: Prabhu Murthy
+*  Date: 1/4/2023
+*  Code version: 1.20.0
+*  URL: https://github.com/prabhuignoto/react-chrono
+*  Software License: MIT License
+***************************************************************************************/
+
 const Experience = () => {
   const items = [
     {

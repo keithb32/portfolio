@@ -6,7 +6,22 @@ import LinkWithIcon from "./LinkWithIcon";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// https://bobbyhadz.com/blog/react-get-window-width-height
+/***************************************************************************************
+*  REFERENCES
+*  
+*  Title: https://bobbyhadz.com/blog/react-get-window-width-height
+*  Author: Borislav Hadzhiev
+*  URL: https://bobbyhadz.com/blog/react-get-window-width-height
+*
+*  Title: react-slick
+*  Author: Kiran Abburi
+*  Date: 4/17/2022
+*  Code version: 0.29.0
+*  URL: https://github.com/akiran/react-slick
+*  Software License: MIT License
+
+
+***************************************************************************************/
 
 const Portfolio = () => {
   const [windowSize, setWindowSize] = useState({
@@ -56,7 +71,7 @@ const Portfolio = () => {
       url: "https://github.com/keithb32/portfolio",
       title: "Portfolio",
       description:
-        "A responsive website detailing my professional experience, interests, and personal/team projects.",
+        "A responsive website detailing my professional experience, interests, and personal/team projects. You're currently viewing it!",
       tags: ["React", "JavaScript", "NextJS", "Tailwind CSS", "Vercel"],
       objectFit: "object-fill",
     },
@@ -137,7 +152,7 @@ const Portfolio = () => {
     >
       <DividerWithText text="Portfolio" />
       <div className="min-[540px]:text-center">
-        <h2 className="text-xl mb-6 text-theme">
+        <h2 className="text-lg mb-6 text-theme">
           Here are some of my most recent projects!
         </h2>
       </div>

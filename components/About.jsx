@@ -18,18 +18,6 @@ const About = () => {
             alt=""
             className="mb-4"
           />
-          {/*
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <button className="text-[#212427] border-2 border-[#212427] px-4 py-2 mb-2 rounded-md hover:bg-gray-300 min-[250px]:w-[200px]">
-              <LinkWithIcon text="Resume" url="#" forButton />
-            </button>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <button className="text-[#212427] border-2 border-[#212427] px-4 py-2 mb-4 rounded-md hover:bg-gray-300 min-[250px]:w-[200px]">
-              <LinkWithIcon text="Transcript" url="#" forButton />
-            </button>
-          </a>
-          */}
         </div>
 
         {/* Right column - paragraph intro */}

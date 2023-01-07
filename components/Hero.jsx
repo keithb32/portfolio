@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <header className="flex items-center justify-center h-screen w-full mb-6 bg-fixed bg-center bg-cover hero-img">
       {/* Overlay */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 h-screen bg-black/70 z-[2]" />
 
       {/* Main Text */}
       <div className="flex flex-col p-5 z-[2] mt-[2rem] mx-10 font-light sm:text-center sm:break-words sm:w-1/2 sm:mt-[-10rem]">

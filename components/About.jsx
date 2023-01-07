@@ -71,7 +71,7 @@ const About = () => {
           </p>
           <br />
           <p>
-            In my free time I enjoy reading, listening to music, lifting, and
+            In my free time I enjoy reading, listening to music, weightlifting, and
             playing basketball. I also love spending time with my two dogs!
           </p>
         </div>

@@ -19,8 +19,6 @@ import "slick-carousel/slick/slick-theme.css";
 *  Code version: 0.29.0
 *  URL: https://github.com/akiran/react-slick
 *  Software License: MIT License
-
-
 ***************************************************************************************/
 
 const Portfolio = () => {

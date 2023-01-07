@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import DividerWithText from "./DividerWithText";
-import { FiExternalLink } from "react-icons/fi";
 import LinkWithIcon from "./LinkWithIcon";
 import Image from "next/image";
 
@@ -61,8 +60,8 @@ const About = () => {
               Since attending the University of Virginia, I have taken several
               electives including Database Systems, Machine Learning, and Mobile
               Application Development which have encouraged me to specialize in
-              frontend development and data analytics.
-              Recently, I've been working with:
+              frontend development and data analytics. Recently, I've been
+              working with:
             </p>
             <ul className="list-disc list-inside my-2 mx-5">
               <li>React</li>
@@ -75,12 +74,17 @@ const About = () => {
           </div>
           <p>
             For a full list of the technologies I've worked with, you can check
-            out my <LinkWithIcon text="resume" url="https://drive.google.com/file/d/1qQDCrvXNDdvM0Wb37McNgMY90DLzu5Nu/view?usp=sharing" />.
+            out my{" "}
+            <LinkWithIcon
+              text="resume"
+              url="https://drive.google.com/file/d/11qvP-n_p5D416nOljWOMjFN1cIhsZjd4/view?usp=sharing"
+            />
+            .
           </p>
           <br />
           <p>
             In my free time I enjoy reading, listening to music, lifting, and
-            playing basketball.
+            playing basketball. I also love spending time with my two dogs!
           </p>
         </div>
       </div>

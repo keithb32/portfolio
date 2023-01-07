@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import BulletedList from "./BulletedList";
 
 const ChronoDetail = ({ image, workplace, jobTitle, time, listItems }) => {

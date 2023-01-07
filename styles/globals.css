@@ -6,15 +6,14 @@ html {
   scroll-behavior: smooth !important;
   /* font-family: "Raleway", sans-serif; */
   color: #212427;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
 }
 
 .hero-img {
   background-image: url("https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
 }
 
-
-.text-theme{
+.text-theme {
   font-family: "Raleway", sans-serif;
 }
 
@@ -27,8 +26,8 @@ https://dev.to/codyhouse/css-nugget-text-divider-in-flexbox-3310
   --text-divider-gap: 1rem;
 }
 
-.text-divider::before{
-  content: '';
+.text-divider::before {
+  content: "";
   height: 1px;
   max-width: 0;
   background-color: silver;
@@ -36,7 +35,7 @@ https://dev.to/codyhouse/css-nugget-text-divider-in-flexbox-3310
 }
 
 .text-divider::after {
-  content: '';
+  content: "";
   height: 1px;
   background-color: silver;
   flex-grow: 1;
@@ -44,7 +43,7 @@ https://dev.to/codyhouse/css-nugget-text-divider-in-flexbox-3310
 }
 
 /*
-Use of !important is necessary to override the styles of slick-track and slick-slide provided by the react-slick library
+Use of !important in the following classes is necessary to override the styles provided by the react-slick library
 */
 .slick-track {
   display: flex !important;

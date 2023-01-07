@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import LinkWithIcon from "./LinkWithIcon";
 
@@ -7,7 +7,7 @@ import LinkWithIcon from "./LinkWithIcon";
 const Card = ({ image, url, title, description, tags, objectFit }) => {
   const [tagsHidden, setTagsHidden] = useState(false);
 
-  useEffect(() => {}, [tagsHidden])
+  useEffect(() => {}, [tagsHidden]);
 
   return (
     <div className="flex w-[90%] flex-col justify-start align-stretch bg-white rounded-lg overflow-hidden shadow-md mx-2 mb-4 relative">
@@ -18,7 +18,7 @@ const Card = ({ image, url, title, description, tags, objectFit }) => {
         height={250}
         alt=""
         className={`w-full h-32 sm:h-48 ${objectFit}`}
-        onMouseOver={() => {console.log("mouse over"); setTagsHidden(true)}}
+        onMouseOver={() => setTagsHidden(true)}
         onMouseOut={() => setTagsHidden(false)}
       />
 
@@ -29,10 +29,17 @@ const Card = ({ image, url, title, description, tags, objectFit }) => {
       </div>
 
       {/* Card tags */}
-      <div className={`absolute top-0 ml-2 mt-2 hidden md:block ${tagsHidden ? "invisible" : "visible"}`} >
+      <div
+        className={`absolute top-0 ml-2 mt-2 hidden md:block ${
+          tagsHidden ? "invisible" : "visible"
+        }`}
+      >
         {tags &&
           tags.map((tag, index) => (
-            <div className="bg-[#212427] text-white p-1 ml-1 text-xs font-bold rounded-full shadow-lg inline-block" key={index}>
+            <div
+              className="bg-[#212427] text-white p-1 ml-1 text-xs font-bold rounded-full shadow-lg inline-block"
+              key={index}
+            >
               <span>{tag}</span>
             </div>
           ))}

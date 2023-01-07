@@ -37,19 +37,19 @@ const Navbar = () => {
     window.addEventListener("scroll", changeNavOpacity);
   }, [scrollY]);
 
-  const opacity = Math.min(30 / scrollY, 1);
+  const navbarOpacity = Math.min(30 / scrollY, 1);
 
   return (
     <nav
       style={{ backgroundColor: `${color}` }}
-      className={`fixed left-0 top-0 w-full z-10 ease-in duration-300 opacity-[${opacity}]`}
+      className={`fixed left-0 top-0 w-full z-10 ease-in duration-300 opacity-[${navbarOpacity}]`}
       hidden={hidden ? true : false}
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-3 text-white">
         {/* Logo */}
         <Link href="/">
           <h1
-            style={{ color: `${textColor}`, opacity: `${opacity}` }}
+            style={{ color: `${textColor}`, opacity: `${navbarOpacity}` }}
             className="font-bold text-4xl"
           >
             Keith Butler
@@ -58,7 +58,7 @@ const Navbar = () => {
 
         {/* Section Links */}
         <ul
-          style={{ color: `${textColor}`, opacity: `${opacity}` }}
+          style={{ color: `${textColor}`, opacity: `${navbarOpacity}` }}
           className="hidden sm:flex"
         >
           <li className="p-4 hover:text-gray-500 text-lg">

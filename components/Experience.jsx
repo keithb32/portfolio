@@ -10,7 +10,7 @@ const Experience = () => {
   const items = [
     {
       workplace: "U.S. Army Technology Development Directorate",
-      jobTitle: "Computer Science Intern",
+      jobTitle: "Software Engineering Intern",
       image: (
         <Image
           src={ArmyLogo}
@@ -23,13 +23,13 @@ const Experience = () => {
       ),
       time: "Aug 2022 - Present",
       listItems: [
-        `• Facilitated preparations for test and evaluation of flight demonstration of multiple autonomous unmanned aircraft.`,
-        `• Supported installation of computer networks used for data acquisition.`,
+        `• Facilitated preparations for a flight demonstration of multiple autonomous unmanned aircraft.`,
+        `• Supported design and installation of computer networks used for data acquisition and flight control.`,
       ],
     },
     {
       workplace: "NASA Langley Research Center",
-      jobTitle: "Structural  & Thermal Systems Branch Intern",
+      jobTitle: "Research Mentee - Structural & Thermal Systems",
       image: (
         <Image
           src={NasaLogo}
@@ -41,15 +41,10 @@ const Experience = () => {
       ),
       time: "Aug 2019 - May 2020",
       listItems: [
-        `• Made improvements to a Python sizing optimization script for
-        the CobraMRV Mars Lander Vehicle including: the addition of a
-        user-friendly GUI, the ability to accept any CobraMRV variant as
-        input, and the ability to generate sensitivity graphs comparing
-        structural mass and load case parameters.`,
+        `• Improved a Python sizing optimization script for the CobraMRV Mars Lander Vehicle by implementing a user-friendly interface, the ability to accept variable model inputs, and the ability to generate sensitivity graphs comparing structural mass and load case parameters.`,
         `• Automated the functionality of structural engineering software
         including NASTRAN and HyperSizer.`,
-        `• Developed APA research paper under guidance of NASA mentor and
-        presented findings to a symposium and branch meeting.`,
+        `• Developed APA research paper and presented findings to a symposium and branch meeting.`,
       ],
     },
     {
@@ -76,8 +71,8 @@ const Experience = () => {
     <div className="max-w-[1240px] m-auto items-center p-3" id="experience">
       <DividerWithText text="Experience" />
 
-      {/* Timeline */}
-      <div className="flex m-auto items-center justify-center w-100 h-100">
+      {/* Timeline - Web */}
+      <div className="hidden min-[540px]:flex m-auto items-center justify-center w-100 h-100">
         <Chrono
           className="text-left"
           mode="VERTICAL"
@@ -104,6 +99,21 @@ const Experience = () => {
               />
             ))}
         </Chrono>
+      </div>
+
+      {/* Timeline - Mobile */}
+      <div className="min-[540px]:hidden">
+        {items &&
+          items.map((item, index) => (
+            <ChronoDetail
+              key={index}
+              image={item.image}
+              workplace={item.workplace}
+              jobTitle={item.jobTitle}
+              time={item.time}
+              listItems={item.listItems}
+            />
+          ))}
       </div>
     </div>
   );

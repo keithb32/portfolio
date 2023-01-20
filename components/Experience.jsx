@@ -5,6 +5,7 @@ import ChronoDetail from "./ChronoDetail";
 import Image from "next/image";
 import ArmyLogo from "../public/army-logo.svg?url";
 import NasaLogo from "../public/nasa-logo.svg?url";
+import UvaLogo from "../public/uva-logo.svg?url";
 
 /***************************************************************************************
 *  REFERENCES
@@ -19,6 +20,21 @@ import NasaLogo from "../public/nasa-logo.svg?url";
 
 const Experience = () => {
   const items = [
+    {
+      workplace: "University of Virginia",
+      jobTitle: "Database Course Teaching Assistant",
+      image: (
+        <Image
+          src={UvaLogo}
+          width={75}
+          height={75}
+          alt="UVA Logo"
+          className="object-fit"
+          style={{height: 75}}
+          />
+      ),
+      time: "Jan 2022 - Present"
+    },
     {
       workplace: "U.S. Army Technology Development Directorate",
       jobTitle: "Software Engineering Intern",
@@ -88,7 +104,7 @@ const Experience = () => {
           className="text-left"
           mode="VERTICAL"
           scrollable={{ scrollbar: false }}
-          cardHeight="150"
+          cardHeight="100"
           theme={{
             primary: "#212427",
             titleColor: "#212427",

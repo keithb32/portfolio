@@ -44,7 +44,7 @@ const Card = ({ image, url, title, description, tags, objectFit }) => {
       {/* Card tags */}
       <div
         className={`absolute top-0 ml-2 mt-2 hidden md:block ${
-          tagsHidden ? "invisible" : "visible"
+          tagsHidden ? "visible" : "invisible"
         }`}
       >
         {tags &&

@@ -33,7 +33,11 @@ const Experience = () => {
           style={{height: 75}}
           />
       ),
-      time: "Jan 2022 - Present"
+      time: "Jan 2022 - Present",
+      listItems: [
+        `• Grade assignments, projects, and examinations for CS 4750 (Database Systems).`,
+        `• Assist students with course material by answering questions in class, responding to discussion board posts, and hosting office hours.`,
+      ],
     },
     {
       workplace: "U.S. Army Technology Development Directorate",
@@ -50,8 +54,9 @@ const Experience = () => {
       ),
       time: "Aug 2022 - Present",
       listItems: [
-        `• Facilitated preparations for a flight demonstration of multiple autonomous unmanned aircraft.`,
-        `• Supported design and installation of computer networks used for data acquisition and flight control.`,
+        `• Facilitate preparations for a flight demonstration of multiple autonomous unmanned aircraft.`,
+        `• Support design and installation of computer networks used for data acquisition and flight control.`,
+        `• Communicate autonomous flight software design solutions to audience of computer, aerospace, and mechanical engineers.`
       ],
     },
     {

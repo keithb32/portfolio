@@ -7,19 +7,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 /***************************************************************************************
-*  REFERENCES
-*  
-*  Title: https://bobbyhadz.com/blog/react-get-window-width-height
-*  Author: Borislav Hadzhiev
-*  URL: https://bobbyhadz.com/blog/react-get-window-width-height
-*
-*  Title: react-slick
-*  Author: Kiran Abburi
-*  Date: 4/17/2022
-*  Code version: 0.29.0
-*  URL: https://github.com/akiran/react-slick
-*  Software License: MIT License
-***************************************************************************************/
+ *  REFERENCES
+ *
+ *  Title: https://bobbyhadz.com/blog/react-get-window-width-height
+ *  Author: Borislav Hadzhiev
+ *  URL: https://bobbyhadz.com/blog/react-get-window-width-height
+ *
+ *  Title: react-slick
+ *  Author: Kiran Abburi
+ *  Date: 4/17/2022
+ *  Code version: 0.29.0
+ *  URL: https://github.com/akiran/react-slick
+ *  Software License: MIT License
+ ***************************************************************************************/
 
 const Portfolio = () => {
   const [windowSize, setWindowSize] = useState({
@@ -65,6 +65,15 @@ const Portfolio = () => {
 
   const projects = [
     {
+      image: "/ascent.png",
+      url: "https://github.com/keithb32/game-ascent",
+      title: "Ascent",
+      description:
+        "A 2D-platformer game inspired by Celeste, featuring a grappling hook mechanic and speedrunning medals.",
+      tags: ["C#", "MonoGame"],
+      objectFit: "object-fill",
+    },
+    {
       image: "/portfolio.png",
       url: "https://github.com/keithb32/portfolio",
       title: "Portfolio",
@@ -79,14 +88,7 @@ const Portfolio = () => {
       title: "Foodie",
       description:
         "A mobile app for an individual's culinary needs. Features a recipe organizer, a searchable library of recipes, and a local restaurant finder.",
-      tags: [
-        "React Native",
-        "JavaScript",
-        "Firebase",
-        "Material UI",
-        "Edamam API",
-        "TomTom API",
-      ],
+      tags: ["React Native", "JavaScript", "Firebase", "Material UI"],
       objectFit: "object-scale-down",
     },
     {
@@ -95,14 +97,7 @@ const Portfolio = () => {
       title: "HoosHealthTracker",
       description:
         "A fitness tracker web application allowing users to track mood, calories, exercise, and sleep. Features a searchable library of over 500,000 foods with nutritional information.",
-      tags: [
-        "Flask",
-        "Python",
-        "MySQL",
-        "Bootstrap",
-        "FoodDataCentral API",
-        "Heroku",
-      ],
+      tags: ["Flask", "Python", "MySQL", "Bootstrap", "Heroku"],
       objectFit: "object-fill",
     },
     {
@@ -116,7 +111,6 @@ const Portfolio = () => {
         "Python",
         "PostgreSQL",
         "Bootstrap",
-        "OAuth2.0",
         "Twilio",
         "Heroku",
         "GitHub Actions",
@@ -171,9 +165,15 @@ const Portfolio = () => {
         {projects &&
           projects.map((project, index) => (
             <div key={index} className="mb-3">
-              <LinkWithIcon text={project.title} url={project.url}/>
-              <p><span className="font-bold">Description: </span>{project.description}</p>
-              <p><span className="font-bold">Built with:</span> {project.tags.join(", ")} </p>
+              <LinkWithIcon text={project.title} url={project.url} />
+              <p>
+                <span className="font-bold">Description: </span>
+                {project.description}
+              </p>
+              <p>
+                <span className="font-bold">Built with:</span>{" "}
+                {project.tags.join(", ")}{" "}
+              </p>
             </div>
           ))}
       </div>

@@ -11,18 +11,16 @@ const Hero = () => {
       <div className="flex flex-col p-5 z-[2] mt-[2rem] mx-10 font-light sm:text-center sm:break-words sm:w-1/2 sm:mt-[-10rem]">
         <p className="py-5 text-lg text-gray-400 sm:text-xl">Hi, my name is</p>
         <h2 className="text-4xl text-[#FAF9F6] font-bold sm:text-5xl ">
-          Keith Butler.
+          Keith Butler
         </h2>
         <p className="py-5 text-lg text-gray-400 sm:text-xl">
-          I'm a third-year{" "}
+          I'm a fourth-year{" "}
           <span className="text-[#FAF9F6]">computer science</span> student at
           the <span className="text-[#FAF9F6]">University of Virginia</span> who
           is interested in{" "}
-          <span className="text-[#FAF9F6]">frontend development</span> and{" "}
+          <span className="text-[#FAF9F6]">web development</span> and{" "}
           <span className="text-[#FAF9F6]">data science</span>. I love creating
-          web apps, mobile apps, data visualizations, and machine learning
-          models. I am currently seeking a{" "}
-          <span className="text-[#FAF9F6]">summer internship for 2023</span>.
+          web apps, mobile apps, and data visualizations.
         </p>
       </div>
     </header>

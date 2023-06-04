@@ -23,10 +23,9 @@ const About = () => {
         {/* Right column - paragraph intro */}
         <div className="sm:col-span-2">
           <p>
-            I'm a third-year student studying computer science at the University
+            I'm a fourth-year student studying computer science at the University
             of Virginia through the School of Engineering and Applied Science.
-            Along with computer science, I am pursuing minors in applied math
-            and sociology.
+            Along with computer science, I am pursuing a minor in applied math.
           </p>
           <br />
           <p>
@@ -46,18 +45,17 @@ const About = () => {
           <div>
             <p>
               Since attending the University of Virginia, I have taken several
-              electives including Database Systems, Machine Learning, and Mobile
-              Application Development which have encouraged me to specialize in
-              frontend development and data analytics. Recently, I've been
+              electives including Database Systems, Machine Learning, Mobile
+              Application Development, and Cloud Computing which have encouraged me to specialize in
+              web development and data analytics. Recently, I've been
               working with:
             </p>
             <ul className="list-disc list-inside my-2 mx-5">
-              <li>React</li>
+              <li>React/React Native</li>
               <li>JavaScript</li>
-              <li>React Native</li>
               <li>Android</li>
               <li>Firebase</li>
-              <li>Figma</li>
+              <li>Docker & Kubernetes</li>
             </ul>
           </div>
           <p>

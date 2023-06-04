@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
+import ScrollButton from "../components/ScrollButton";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Experience />
       <Portfolio />
       <Contact />
+      <ScrollButton />
     </>
   );
 }

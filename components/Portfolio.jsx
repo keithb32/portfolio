@@ -145,7 +145,7 @@ const Portfolio = () => {
       <DividerWithText text="Portfolio" />
       <div className="min-[540px]:text-center">
         <h2 className="text-lg mb-6 text-theme">
-          Here are some of my most recent projects!
+          Here are some of my most recent personal and team projects!
         </h2>
       </div>
 

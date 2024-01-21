@@ -10,8 +10,6 @@ import { FaArrowCircleUp } from "react-icons/fa";
  *  URL: https://www.geeksforgeeks.org/how-to-create-a-scroll-to-top-button-in-react-js/#
  ***************************************************************************************/
 
-
-
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
 
@@ -33,6 +31,10 @@ const ScrollButton = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisible);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
   });
 
   return (

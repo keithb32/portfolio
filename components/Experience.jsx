@@ -21,6 +21,26 @@ import UvaLogo from "../public/uva-logo.svg?url";
 const Experience = () => {
   const items = [
     {
+      workplace: "University of Virginia",
+      jobTitle: "Research Assistant",
+      image: (
+        <Image
+          src={UvaLogo}
+          width={75}
+          height={75}
+          alt="UVA Logo"
+          className="object-fit"
+          style={{ height: 75 }}
+        />
+      ),
+      time: "Aug 2023 - Present",
+      listItems: [
+        `• Supported development of web-based interventions at the Center for Behavioral Health & Technology.`,
+        `• Migrated admin views to a new UI module, added email validation and audio transcript feature, performed refactors, updated unit tests, and wrote tickets for future work.`,
+        `• Used Ruby on Rails, PostgreSQL, JavaScript, TailwindCSS, and Hotwire.`,
+      ],
+    },
+    {
       workplace: "Leidos",
       jobTitle: "Software Engineer Intern",
       image: (
@@ -33,16 +53,17 @@ const Experience = () => {
           style={{ height: 75 }}
         />
       ),
-      time: "May 2023 - Present",
+      time: "May 2023 - Aug 2023",
       listItems: [
-        `• Developed, refactored, and debugged code within a microservice-oriented architecture to support the development of a large-scale web application used for space domain awareness.`,
-        `• Utilized technologies including Docker, Kubernetes, React, JavaScript, Java, and MongoDB to enable the persistence and visualization of satellite and rocket data.`,
-        `• Worked alongside senior engineers following the SCRUM Agile methodology.`,
+        `• Supported development of a web application used for space domain awareness.`,
+        `• Wrote microservice for persisting sensor data from a third-party API, decoupled and migrated UI components to a dedicated module, resolved bugs, and produced documentation on setup for Windows environments.`,
+        `• Used Docker, Kubernetes, React, JavaScript, Java, Kafka, and MongoDB.`,
+        `• Worked alongside senior engineers following the Scrum methodology.`,
       ],
     },
     {
       workplace: "University of Virginia",
-      jobTitle: "Undergraduate Teaching Assistant",
+      jobTitle: "Head Teaching Assistant - CS 4750: Database Systems",
       image: (
         <Image
           src={UvaLogo}
@@ -53,12 +74,12 @@ const Experience = () => {
           style={{ height: 75 }}
         />
       ),
-      time: "Jan 2022 - Present",
+      time: "Jan 2023 - Dec 2023",
       listItems: [
-        `• Graded assignments, projects, and tests for CS 4750 (Database Systems).`,
-        `• Attended lectures and hosted office hours three times a week, offering additional support to students by answering questions, providing one-on-one assistance with assignments, and responding to discussion board posts.`,
-        `• Delivered lecture to over 100 students during the professor's absence, effectively conveying complex database topics to ensure continuity in learning.`,
-        `• Collaborated with the professor and other teaching assistants to develop instructional materials, including homework assignments and exams.`,
+        `• Sent weekly announcements to the class and teaching team, revised and uploaded assignment rubrics, reviewed grades for consistency, and handled regrade requests.`,
+        `• Hosted office hours 2-3 times per week, graded assignments, proctored exams, and responded to questions on the class discussion board.`,
+        `• Covered database topics including entity-relationship model, normalization, SQL, relational algebra, indexing, security, transactions, and concurrency control.`,
+        `• Delivered a lecture to over 100 students about indexing and B+ trees.`,
       ],
     },
     {
@@ -76,9 +97,9 @@ const Experience = () => {
       ),
       time: "Aug 2022 - Mar 2023",
       listItems: [
-        `• Facilitated preparations for a flight demonstration of multiple autonomous unmanned aircraft.`,
-        `• Supported design and installation of computer networks used for data acquisition and flight control.`,
-        `• Communicated autonomous flight software design solutions to audience of computer, aerospace, and mechanical engineers.`,
+        `• Helped set up mobile laboratories for a flight demonstration of multiple autonomous unmanned aircraft.`,
+        `• Supported design and installation of local area networks used for data acquisition and flight control.`,
+        `• Investigated and presented a solution for integrating proprietary autonomous flight software with in-house software.`,
       ],
     },
     {
@@ -95,10 +116,10 @@ const Experience = () => {
       ),
       time: "Aug 2019 - May 2020",
       listItems: [
-        `• Enhanced a sizing optimization script for the CobraMRV Mars Lander Vehicle by adding a user-friendly GUI, a sensitivity graph generator that compares structural mass and load case parameters, and the ability to accept other CobraMRV model variants as input.`,
-        `• Developed Python code to interface with engineering software including NASTRAN and HyperSizer.`,
-        `• Authored APA research paper that documents the improvements made to the Python sizing optimization script as well as an analysis of the sensitivity graphs generated by the script.`,
-        `• Presented findings to a research symposium and branch meeting with industry professionals.`,
+        `• Refactored a sizing optimization script to accept variants of the CobraMRV Mars Lander Vehicle model.`,
+        `• Built a graphical user interface for interacting with the script and producing sensitivity graphs.`,
+        `• Used Python, Excel VBA, and finite element analysis software including NASTRAN, PATRAN, and HyperSizer.`,
+        `• Authored a research paper and presented findings to a symposium and branch meeting.`,
       ],
     },
     {
@@ -115,7 +136,8 @@ const Experience = () => {
       ),
       time: "Jun 2018 - Apr 2020",
       listItems: [
-        `• Organized book carts and returned books to their designated locations, ensuring proper organization and adherence to the library's classification system.`,
+        `• Organized book carts and returned books to their designated locations.`,
+        `• Conducted inventory checks.`,
         `• Assisted patrons in locating books, DVDs, and other materials.`,
       ],
     },

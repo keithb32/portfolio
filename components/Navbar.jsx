@@ -2,21 +2,20 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-
 /***************************************************************************************
-*  REFERENCES
-*  
-*  Title: How can I fade a navbar with a scroll down with React?
-*  Author: DZack
-*  Date: 10/13/2017
-*  URL: https://stackoverflow.com/questions/46719757/how-can-i-fade-a-navbar-with-a-scroll-down-with-react
-*
-*  Title: Build A Responsive Next JS Website Using Tailwind CSS - Beginner Guide
-*  Author: Code Commerce
-*  Date: 7/2/2022
-*  URL: https://www.youtube.com/watch?v=HVyct9EUNP8
-*
-***************************************************************************************/
+ *  REFERENCES
+ *
+ *  Title: How can I fade a navbar with a scroll down with React?
+ *  Author: DZack
+ *  Date: 10/13/2017
+ *  URL: https://stackoverflow.com/questions/46719757/how-can-i-fade-a-navbar-with-a-scroll-down-with-react
+ *
+ *  Title: Build A Responsive Next JS Website Using Tailwind CSS - Beginner Guide
+ *  Author: Code Commerce
+ *  Date: 7/2/2022
+ *  URL: https://www.youtube.com/watch?v=HVyct9EUNP8
+ *
+ ***************************************************************************************/
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -49,6 +48,11 @@ const Navbar = () => {
 
     window.addEventListener("scroll", changeColor);
     window.addEventListener("scroll", changeNavOpacity);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+      window.removeEventListener("scroll", changeNavOpacity);
+    };
   }, [scrollY]);
 
   const navbarOpacity = Math.min(30 / scrollY, 1);
@@ -82,7 +86,7 @@ const Navbar = () => {
             <Link href="/#experience">Experience</Link>
           </li>
           <li className="p-4 hover:text-gray-500 text-lg">
-            <Link href="/#portfolio">Portfolio</Link>
+            <Link href="/#projects">Projects</Link>
           </li>
           <li className="p-4 hover:text-gray-500 text-lg">
             <Link href="/#contact">Contact</Link>

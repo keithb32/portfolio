@@ -23,18 +23,19 @@ const About = () => {
         {/* Right column - paragraph intro */}
         <div className="sm:col-span-2">
           <p>
-            I'm a fourth-year student studying computer science at the University
-            of Virginia through the School of Engineering and Applied Science.
-            Along with computer science, I am pursuing a minor in applied math.
+            I'm a fourth-year student studying computer science at the
+            University of Virginia's School of Engineering. Along with computer
+            science, I am pursuing a minor in applied math.
           </p>
           <br />
           <p>
             My passion for programming began my junior year of high school when
-            I took my first course in Python, Computational Physics. That class
-            taught me the power of computers as I used Python to perform
-            computations and produce visualizations for physics problems
-            involving large datasets. At that time I also gained interest in
-            competitive programming, enrolling in competitions such as{" "}
+            I took my first programming course, Computational Physics. In that
+            class, I used Python to perform calculations and produce
+            visualizations for physics problems involving large datasets, which
+            taught me the power of computers. At that time, I also gained
+            interest in competitive programming, enrolling in competitions such
+            as{" "}
             <LinkWithIcon
               text="ODU's Great Computer Challenge"
               url="http://education.whro.org/great-computer-challenge"
@@ -46,16 +47,17 @@ const About = () => {
             <p>
               Since attending the University of Virginia, I have taken several
               electives including Database Systems, Machine Learning, Mobile
-              Application Development, and Cloud Computing which have encouraged me to specialize in
-              web development and data analytics. Recently, I've been
-              working with:
+              Application Development, Programming Languages for Web
+              Applications, and Cloud Computing, which have encouraged me to
+              specialize in web development and data analytics. Recently, I've
+              been working with:
             </p>
             <ul className="list-disc list-inside my-2 mx-5">
-              <li>React/React Native</li>
+              <li>React</li>
+              <li>Java</li>
               <li>JavaScript</li>
-              <li>Android</li>
-              <li>Firebase</li>
               <li>Docker & Kubernetes</li>
+              <li>Ruby on Rails</li>
             </ul>
           </div>
           <p>
@@ -69,8 +71,8 @@ const About = () => {
           </p>
           <br />
           <p>
-            In my free time I enjoy reading, listening to music, weightlifting, and
-            playing basketball. I also love spending time with my two dogs!
+            In my free time I enjoy reading, listening to music, weightlifting,
+            and playing basketball. I also love spending time with my two dogs!
           </p>
         </div>
       </div>

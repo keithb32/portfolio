@@ -1,36 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import LinkWithIcon from "./LinkWithIcon";
 
 /***************************************************************************************
-*  REFERENCES
-*  
-*  Title: Tailwind CSS Tutorial #9 - Cards
-*  Author: The Net Ninja
-*  Date: 7/13/2020
-*  URL: https://www.youtube.com/watch?v=vqKie-xmcFs&t=2s
-*
-*  Title: Tailwind CSS Tutorial #10 - Badges
-*  Author: The Net Ninja
-*  Date: 7/15/2020
-*  URL: https://www.youtube.com/watch?v=cY0XJY98d3w
-*
-***************************************************************************************/
+ *  REFERENCES
+ *
+ *  Title: Tailwind CSS Tutorial #9 - Cards
+ *  Author: The Net Ninja
+ *  Date: 7/13/2020
+ *  URL: https://www.youtube.com/watch?v=vqKie-xmcFs&t=2s
+ *
+ *  Title: Tailwind CSS Tutorial #10 - Badges
+ *  Author: The Net Ninja
+ *  Date: 7/15/2020
+ *  URL: https://www.youtube.com/watch?v=cY0XJY98d3w
+ *
+ ***************************************************************************************/
 
 const Card = ({ image, url, title, description, tags, objectFit }) => {
   const [tagsHidden, setTagsHidden] = useState(false);
-
-  useEffect(() => {}, [tagsHidden]);
 
   return (
     <div className="flex w-[90%] flex-col justify-start align-stretch bg-white rounded-lg overflow-hidden shadow-md mx-2 mb-4 relative">
       {/* Card banner image */}
       <Image
-        src={image && image}
-        width={250}
-        height={250}
-        alt=""
-        className={`w-full h-32 sm:h-48 ${objectFit}`}
+        src={image}
+        width={500}
+        height={500}
+        alt={`${title} screenshot`}
+        className="w-full h-32 sm:h-48 object-scale-down"
         onMouseOver={() => setTagsHidden(true)}
         onMouseOut={() => setTagsHidden(false)}
       />
